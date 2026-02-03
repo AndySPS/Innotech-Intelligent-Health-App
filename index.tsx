@@ -23,7 +23,7 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     // Registering from the absolute root as configured in vercel.json
     navigator.serviceWorker.register('/sw.js').then(registration => {
-      console.log('SW registered: ', registration);
+      console.log('Service Worker registered with scope: ', registration.scope);
     }).catch(err => {
       console.log('SW registration failed: ', err);
     });
