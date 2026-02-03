@@ -18,10 +18,13 @@ root.render(
   </React.StrictMode>
 );
 
-// Basic Service Worker for PWA
+// PWA Service Worker Registration
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(err => {
+    // Registering from the absolute root as configured in vercel.json
+    navigator.serviceWorker.register('/sw.js').then(registration => {
+      console.log('SW registered: ', registration);
+    }).catch(err => {
       console.log('SW registration failed: ', err);
     });
   });

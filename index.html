@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>M3 Android App</title>
+    <title>Innotech Health</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4A6A88">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -81,6 +83,10 @@
         .scrollbar-hide {
             -ms-overflow-style: none;
             scrollbar-width: none;
+        }
+        /* PWA splash screen like feel */
+        #root {
+            min-height: 100vh;
         }
     </style>
 <script type="importmap">
