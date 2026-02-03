@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>M3 Android App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        m3: {
+                            primary: '#4A6A88',
+                            onPrimary: '#FFFFFF',
+                            primaryContainer: '#D1E4FF',
+                            onPrimaryContainer: '#001D36',
+                            secondary: '#535F70',
+                            onSecondary: '#FFFFFF',
+                            secondaryContainer: '#D7E3F7',
+                            onSecondaryContainer: '#101C2B',
+                            tertiary: '#6B5778',
+                            onTertiary: '#FFFFFF',
+                            tertiaryContainer: '#F2DAFF',
+                            onTertiaryContainer: '#251431',
+                            error: '#BA1A1A',
+                            onError: '#FFFFFF',
+                            errorContainer: '#FFDAD6',
+                            onErrorContainer: '#410002',
+                            background: '#F8F9FF',
+                            onBackground: '#191C20',
+                            surface: '#F8F9FF',
+                            onSurface: '#191C20',
+                            surfaceVariant: '#DFE2EB',
+                            onSurfaceVariant: '#43474E',
+                            outline: '#73777F',
+                            surfaceContainerLowest: '#FFFFFF',
+                            surfaceContainerLow: '#F1F4F9',
+                            surfaceContainer: '#EBEEF3',
+                            surfaceContainerHigh: '#E5E8EE',
+                            surfaceContainerHighest: '#E0E2E8',
+                        }
+                    },
+                    spacing: {
+                        'dp-4': '4px',
+                        'dp-8': '8px',
+                        'dp-12': '12px',
+                        'dp-16': '16px',
+                        'dp-24': '24px',
+                        'dp-32': '32px',
+                        'dp-48': '48px',
+                        'dp-56': '56px',
+                        'dp-64': '64px',
+                    },
+                    borderRadius: {
+                        'm3-none': '0px',
+                        'm3-xs': '4px',
+                        'm3-sm': '8px',
+                        'm3-md': '12px',
+                        'm3-lg': '16px',
+                        'm3-xl': '28px',
+                        'm3-full': '9999px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #F8F9FF; /* m3-background */
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
